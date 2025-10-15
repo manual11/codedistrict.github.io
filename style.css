@@ -534,4 +534,97 @@
             .hero-animation {
                 display: none;
             }
+
         }
+/* Base styles (for desktops/tablets) */
+/* Keep your existing CSS above this */
+
+/* Mobile devices (portrait) */
+@media screen and (max-width: 480px) {
+  /* General body adjustments */
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  /* Hero section adjustments */
+  .hero {
+    text-align: center;
+    padding: 50px 10px;
+  }
+
+  .hero h1, .hero h2 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  /* Buttons */
+  .hero .btn, 
+  .cta-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  /* Navigation (hamburger menu layout) */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar li {
+    text-align: left;
+    width: 100%;
+  }
+
+  /* Footer quick links */
+  .footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer .quick-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Portfolio / cards */
+  .portfolio-card {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+/* Slightly larger mobile devices (landscape / small tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1, .hero h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-card {
+    width: 48%;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
